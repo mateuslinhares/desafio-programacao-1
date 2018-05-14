@@ -1,6 +1,7 @@
-### Instruções
-Este este foi feito usando Ruby 2.4.1 com Rails 5.1.6.
-Siga os passos abaixo para rodar o projeto:
+# Instruções
+Este projeto foi feito usando Ruby 2.4.1 com Rails 5.1.6.
+
+Siga os passos abaixo para rodar:
 
 ```
 $ git clone https://github.com/mateuslinhares/desafio-programacao-1.git
@@ -16,7 +17,7 @@ Para rodar os testes do projeto:
 $ rake
 ```
 
-Este projeto foi feito baseado no teste abaixo.
+# Este projeto foi feito baseado no teste abaixo.
 
 # Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
