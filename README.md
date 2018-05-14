@@ -1,3 +1,23 @@
+### Instruções
+Este este foi feito usando Ruby 2.4.1 com Rails 5.1.6.
+Siga os passos abaixo para rodar o projeto:
+
+```
+$ git clone https://github.com/mateuslinhares/desafio-programacao-1.git
+$ cd desafio-programacao-1
+$ bundle
+$ rails db:setup
+$ rails server
+```
+
+Para rodar os testes do projeto:
+
+```
+$ rake
+```
+
+Este projeto foi feito baseado no teste abaixo.
+
 # Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
@@ -33,7 +53,7 @@ Sua aplicação web não precisa:
 1. Ter uma aparência bonita.
 
 ## Avaliação
-Seu projeto será avaliado de acordo com os seguintes critérios. 
+Seu projeto será avaliado de acordo com os seguintes critérios.
 
 1. Sua aplicação preenche os requerimentos básicos?
 1. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
