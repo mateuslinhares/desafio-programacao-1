@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="w-100">
+    <h3>Purchases Summary</h3>
+    <div class="float-right">
+      <h4 class="revenue">Revenue: <%= number_to_currency @revenue %></h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" align="center">#</th>
+        <th scope="col" align="center">Purchaser Name</th>
+        <th scope="col" align="center">Item Description</th>
+        <th scope="col" align="center">Merchant</th>
+        <th scope="col" align="center">Qty x Price</th>
+        <th scope="col" align="center">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @purchases.each do |purchase| %>
+        <tr>
+          <th scope="row"><%= purchase.id %></th>
+          <td><%= purchase.purchaser.name %></td>
+          <td><%= purchase.item.description %></td>
+          <td><%= purchase.merchant.name %><br><%= purchase.merchant.address %></td>
+          <td align="right"><%= purchase.amount %> x <%= number_to_currency purchase.item.price %></td>
+          <td align="right"><%= number_to_currency purchase.total %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= link_to 'Upload purchases', new_purchase_path, class: "btn btn-primary" %>

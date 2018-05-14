@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="w-100"><h2>Upload Purchases File</h2></div>
+</div>
+
+<div class="row">
+  <%= form_for @purchase, multipart: true do |f| %>
+    <div class="form-group">
+      <%= f.label :file, 'File' %>
+      <%= f.file_field :file, class: "form-control" %>
+    </div>
+    <%= f.submit 'Upload', class: "btn btn-primary" %>
+  <% end %>
+</div>
